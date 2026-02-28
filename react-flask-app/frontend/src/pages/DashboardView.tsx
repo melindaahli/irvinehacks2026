@@ -1,18 +1,21 @@
+import RightArrow from '../assets/arrow_right.svg';
+
 function DashboardView() {
     return (
-    <div className="container bg-gradient-to-t from-[#E2F5FB] to-[#CEEDF8]">
-        <h1>Welcome back, shart</h1>
-        <div className="card bg-base-100 shadow-sm bg-gradient-to-t from-[#FEF9E7] to-white rounded-t-3xl">
-            {/* <figure>
-                <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes" />
-            </figure> */}
-            <div className="card-body">
-                <h2 className="card-title text-left">My Garden</h2>
-                <div className="card-actions justify-end">
-                <button className="btn btn-circle push-right rounded-full h-30px w-30px">&gt;</button>
-                </div>
+    <div className="container blue_background">
+        <div className="header h-[324px]">
+            <p className="text-[39px] text-left pt-[25px] pl-[15px]">welcome back, shart</p>
+        </div>
+        <div className="card bg-base-100 shadow-sm flex bg-gradient-to-t from-[#FEF9E7] to-white rounded-t-3xl w-[440px] h-[632px]">
+            <div className="tan_card">
+                <header className="mx-auto flex items-center justify-between w-[350px] bg-black">
+                   <h2 className="text-left text-[20px]">My Garden</h2>
+                    <div className="card-actions">
+                        <img src={RightArrow} className=""/>
+                        {/* <button className="btn btn-circle push-right rounded-full h-30px w-30px">&gt;</button> */}
+                    </div>
+                </header>
+                
             </div>
         </div>
     </div>
