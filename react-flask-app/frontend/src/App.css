@@ -115,3 +115,32 @@
   flex-direction: column;
   align-items: center;
 }
+
+
+
+/* dashboard css */
+.dashboard-title{
+  font-size: 30px;
+  font-family: 'DM Sans', sans-serif;
+  color: #3E4D22 !important;
+  font-weight: bold !important;
+  font-size: 20px;
+  text-align: left;
+}
+
+.plant-card{
+  height: 180px;
+  width: 150px;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, rgb(146, 203, 79, 0.3), rgb(212, 230, 151, 0.3));
+}
+
+.recc-task-button{
+  width: 374px;
+  height: 60px;
+  background: linear-gradient(to top, rgb(146, 203, 79, 0.3), rgb(212, 230, 151, 0.3));
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 20px;
+}
