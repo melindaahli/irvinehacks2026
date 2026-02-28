@@ -22,14 +22,14 @@ function App() {
 
       <div className="App">
           {/* nav bar */}
-          <nav>
+          {/* <nav>
             <Link to="/dashboard">Dashboard</Link> | {" "}
             <Link to="/gallery">Gallery</Link> | {" "}
             <Link to="/single-plant">Single Plant</Link> 
-          </nav>
+          </nav> */}
 
-          <h1>name is: |{data.name}|</h1>
-          <p>message is: |{data.message}|</p>
+          {/* <h1>name is: |{data.name}|</h1>
+          <p>message is: |{data.message}|</p> */}
 
           {/* routes */}
           <Routes>
