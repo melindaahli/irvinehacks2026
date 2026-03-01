@@ -30,7 +30,7 @@ function SinglePlantView() {
         } else {
             return <>gallery</>;
         }
-    }
+    }p
 
     return (
     <div className="flex flex-col justify-between">
