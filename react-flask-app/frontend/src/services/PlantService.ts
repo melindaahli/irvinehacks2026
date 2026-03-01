@@ -2,7 +2,7 @@ import axios from 'axios';
 import { PlantData } from "../data/plant-data";
 
 const PRODUCTION = false; // CHANGE TO TRUE FOR LIVE SENSOR DATA
-const API_URL = 'http://192.168.0.151:5000';
+const API_URL = 'http://xxx.xxx.x.xxx:5000'; // CHANGE TO APPROPRITATE IP ADDRESS & PORT 5000 RUNNING BACKEND 
 
 type SensorResponse = {
   id: number;
