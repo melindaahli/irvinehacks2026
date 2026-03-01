@@ -13,8 +13,8 @@ type SensorResponse = {
 };
 
 export async function fetchPlants(): Promise<PlantData[]> {
-  const basePlants = [
-    {
+  const basePlants: PlantData[] = [
+    new PlantData({
       plantId: "1",
       name: "sharty bae",
       plantType: "leafy",
@@ -29,8 +29,8 @@ export async function fetchPlants(): Promise<PlantData[]> {
       recHumidity: 100,
       recMoisture: 100,
       recLight: "Partial Sun"
-    },
-    {
+    }),
+    new PlantData({
       plantId: "2",
       name: "hottie hottie",
       plantType: "succulent",
@@ -45,8 +45,8 @@ export async function fetchPlants(): Promise<PlantData[]> {
       recHumidity: 100,
       recMoisture: 100,
       recLight: "Partial Sun"
-    },
-    {
+    }),
+    new PlantData({
       plantId: "3",
       name: "Bartholomew",
       plantType: "flower",
@@ -61,8 +61,8 @@ export async function fetchPlants(): Promise<PlantData[]> {
       recHumidity: 100,
       recMoisture: 100,
       recLight: "Partial Sun"
-    }, 
-    {
+    }), 
+    new PlantData({
       plantId: "4",
       name: "Airoma",
       plantType: "leafy",
@@ -77,8 +77,8 @@ export async function fetchPlants(): Promise<PlantData[]> {
       recHumidity: 100,
       recMoisture: 100,
       recLight: "Partial Sun"
-    },
-    {
+    }),
+    new PlantData({
       plantId: "5",
       name: "Sea Bass",
       plantType: "succulent",
@@ -93,8 +93,8 @@ export async function fetchPlants(): Promise<PlantData[]> {
       recHumidity: 100,
       recMoisture: 100,
       recLight: "Partial Sun"
-    }
-  ].map(p => new PlantData(p));
+    })
+  ];
 
   let sensorData: SensorResponse[] = [
     {
