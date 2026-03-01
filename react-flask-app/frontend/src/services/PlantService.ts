@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://127.0.0.1';
+const API_URL = 'http://172.31.76.126:5000';
 
 // export const fetchData = async (endpoint) => {
 //     try {
@@ -13,7 +13,7 @@ const API_URL = 'https://127.0.0.1';
 // }
 
 async function getAll() {
-    const endpoint = '/api/data';
+    const endpoint = '/api/sensors';
     try {
         const result = await axios.get(endpoint);
         return result.data || [];
