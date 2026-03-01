@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { PlantData } from "../data/plant-data";
 
-const PRODUCTION = true;
+const PRODUCTION = false;
 const API_URL = 'http://172.31.76.126:5000';
 
 type SensorResponse = {
