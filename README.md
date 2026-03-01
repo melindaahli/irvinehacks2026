@@ -19,7 +19,6 @@ We combined hardware, IOT, and web technologies to develop Rooted. Sensor data i
 - Python
 - Flask API
 - JSON data handling
-- React
 
 **Frontend**
 - React
@@ -46,4 +45,4 @@ We combined hardware, IOT, and web technologies to develop Rooted. Sensor data i
 - Collaboration across hardware and software teams
 
 ## What's next for Rooted
-In the future, Rooted will continue to support users by expanding the variety of plants included in our system, allowing for more personalized and species-specific care recommendations. We plan to improve our plant health scoring model by incorporating historical sensor data and machine learning to better predict plant needs before issues arise.
+In the future, Rooted will continue to support users by expanding the variety of plants in our system, allowing for more personalized and species-specific care recommendations. When users add a new plant, Rooted will automatically populate the plant’s detail page with recommended care instructions tailored to that species. While we didn’t have time to fully implement this feature in the current version, the infrastructure is already in place, making it ready for future updates. Furthermore, we plan to enhance our plant health scoring model by incorporating historical sensor data and machine learning to better predict plant needs before issues arise. We also plan to introduce is a gallery feature, enabling users to take photos of their plants and track their growth and progress over time.
