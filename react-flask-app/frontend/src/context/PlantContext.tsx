@@ -30,8 +30,8 @@ export function PlantProvider({ children }: { children: React.ReactNode }) {
     // initial load
     loadPlants();
 
-    // poll every 5 seconds
-    const intervalId = setInterval(loadPlants, 5000);
+    // poll every 3 seconds
+    const intervalId = setInterval(loadPlants, 3000);
 
     // cleanup on unmount
     return () => {
