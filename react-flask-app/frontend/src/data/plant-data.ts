@@ -80,7 +80,7 @@ export class PlantData {
     }
 
     // Temperature: too hot or too cold
-    if (this.airTempF < this.recAirTempF - 5) {
+    if (this.airTempF < this.recAirTempF - 10) {
         tasks.push({
             id: `${this.plantId}-temp-low`,
             plantId: this.plantId,
@@ -88,7 +88,7 @@ export class PlantData {
             status: "pending",
             message: "Your plant is too cold! Warm it up!"
         });
-    } else if (this.airTempF > this.recAirTempF + 5) {
+    } else if (this.airTempF > this.recAirTempF + 10) {
         tasks.push({
             id: `${this.plantId}-temp-high`,
             plantId: this.plantId,
