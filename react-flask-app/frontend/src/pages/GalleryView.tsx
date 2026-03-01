@@ -1,6 +1,5 @@
 import shelf from "../assets/shelf.svg";
 import arrow from "../assets/nocircle_arrow.svg";
-import plant from "../assets/plant_placeholder.png";
 import flower from "../assets/flower.svg";
 import leafy from "../assets/leafy.svg";
 import succulent from "../assets/succulent.svg";
