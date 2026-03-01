@@ -6,6 +6,9 @@ import PlantShelf from "../components/PlantShelf";
 import HealthScoreHeart from "../components/HealthScoreHeart";
 
 import humidity from "../assets/humidity.svg";
+import temperature from "../assets/temperature.svg";
+import light from "../assets/light.svg";
+
 import arrow from "../assets/nocircle_arrow.svg";
 
 function SinglePlantView() {
@@ -59,7 +62,7 @@ function SinglePlantView() {
         <div className="flex flex-col gap-2">
           <ProgressCard
             category="Temperature"
-            srcIcon={humidity}
+            srcIcon={temperature}
             currentVal={currentTemp}
             maxVal={maxTemp}
           />
@@ -71,7 +74,7 @@ function SinglePlantView() {
           />
           <ProgressCard
             category="Light"
-            srcIcon={humidity}
+            srcIcon={light}
             currentVal={currentLight}
             maxVal={maxLight}
           />
@@ -111,7 +114,19 @@ function SinglePlantView() {
         <p className="m-0 nav_text">Garden</p>
       </div>
 
-      <PlantShelf plantType={plant.plantType}/>
+      <PlantShelf
+        plantType={plant.plantType}
+        onPrev={() => {
+            const prevId = Number(plantId) - 1;
+            const loopedPrev = prevId < 1 ? 5 : prevId; 
+            navigate(`/plant/${loopedPrev}`);
+        }}
+        onNext={() => {
+            const nextId = Number(plantId) + 1;
+            const loopedNext = nextId > 5 ? 1 : nextId;
+            navigate(`/plant/${loopedNext}`);
+        }}
+      />
 
       <div className="flex justify-between m-2">
         <div>
