@@ -4,6 +4,7 @@ import { usePlants } from "../context/PlantContext";
 import ProgressCard from "../components/ProgressCard";
 import PlantShelf from "../components/PlantShelf";
 import HealthScoreHeart from "../components/HealthScoreHeart";
+import TaskCard from "../components/TaskCard";
 
 import humidity from "../assets/humidity.svg";
 import temperature from "../assets/temperature.svg";
@@ -88,11 +89,11 @@ function SinglePlantView() {
       );
     } else if (segmentViewId === 2) {
       return (plant &&
-        <div>
+        <div className="flex flex-col gap-2">
           {plant.tasks.length === 0
             ? "No tasks!"
             : plant.tasks.map(task => (
-                <div key={task.id}>{task.message}</div>
+                <TaskCard key={task.id} task={task} showName={false} />
               ))}
         </div>
       );
