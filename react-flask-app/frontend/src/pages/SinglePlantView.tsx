@@ -111,7 +111,7 @@ function SinglePlantView() {
         <p className="m-0 nav_text">Garden</p>
       </div>
 
-      <PlantShelf />
+      <PlantShelf plantType={plant.plantType}/>
 
       <div className="flex justify-between m-2">
         <div>
