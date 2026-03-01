@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { PlantData } from "../data/plant-data";
 
-const PRODUCTION = true;
+const PRODUCTION = false;
 const API_URL = 'http://172.31.76.126:5000';
 
 type SensorResponse = {
@@ -29,7 +29,7 @@ export async function fetchPlants(): Promise<PlantData[]> {
     },
     {
       plantId: "2",
-      name: "hottie hottie"
+      name: "hottie hottie",
       temperature: 75,
       humidity: 80,
       moisture: 50,
@@ -42,7 +42,7 @@ export async function fetchPlants(): Promise<PlantData[]> {
     },
     {
       plantId: "3",
-      name: "Bartholomew"
+      name: "Bartholomew",
       temperature: 75,
       humidity: 80,
       moisture: 50,
