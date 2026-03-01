@@ -46,7 +46,7 @@ export async function fetchPlants(): Promise<PlantData[]> {
     {
       plantId: "2",
       airTempF: 75,
-      humidity: 60,
+      humidity: 80,
       soilMoisture: 50,
       lightLevel: 500
     }
