@@ -16,6 +16,7 @@ export async function fetchPlants(): Promise<PlantData[]> {
   const basePlants = [
     {
       plantId: "1",
+      name: "sharty bae",
       temperature: 95,
       humidity: 40,
       moisture: 10,
@@ -28,6 +29,7 @@ export async function fetchPlants(): Promise<PlantData[]> {
     },
     {
       plantId: "2",
+      name: "hottie hottie"
       temperature: 75,
       humidity: 80,
       moisture: 50,
@@ -40,6 +42,7 @@ export async function fetchPlants(): Promise<PlantData[]> {
     },
     {
       plantId: "3",
+      name: "Bartholomew"
       temperature: 75,
       humidity: 80,
       moisture: 50,
@@ -52,6 +55,7 @@ export async function fetchPlants(): Promise<PlantData[]> {
     }, 
     {
       plantId: "4",
+      name: "Airoma",
       temperature: 75,
       humidity: 80,
       moisture: 50,
@@ -64,6 +68,7 @@ export async function fetchPlants(): Promise<PlantData[]> {
     },
     {
       plantId: "5",
+      name: "Sea Bass",
       temperature: 75,
       humidity: 80,
       moisture: 50,

@@ -2,6 +2,7 @@ import type { Task } from "../models/Task";
 
 interface PlantDataModel {
     plantId: string;
+    name: string;
     temperature?: number;
     humidity?: number;
     moisture?: number;
@@ -15,6 +16,7 @@ interface PlantDataModel {
 
 export class PlantData {
     plantId: string;
+    name: string;
     airTempF: number;
     humidity: number;
     soilMoisture: number;
@@ -29,6 +31,7 @@ export class PlantData {
 
     constructor(objectModel:PlantDataModel) {
         this.plantId = objectModel['plantId'] ?? "";
+        this.name = objectModel['name'] ?? "";
         this.airTempF = objectModel['temperature'] ?? 0;
         this.humidity = objectModel['humidity'] ?? 0;
         this.soilMoisture = objectModel['moisture'] ?? 0;
@@ -50,7 +53,8 @@ export class PlantData {
             id: `${this.plantId}-water`,
             plantId: this.plantId,
             title: "moisture",
-            status: "pending"
+            status: "pending",
+            message: "Please water your plant!"
         });
         }
 
@@ -59,7 +63,8 @@ export class PlantData {
             id: `${this.plantId}-temperature`,
             plantId: this.plantId,
             title: "temperature",
-            status: "pending"
+            status: "pending",
+            message: "Please cool down your plant!"
         });
         }
 
@@ -68,7 +73,8 @@ export class PlantData {
             id: `${this.plantId}-humidity`,
             plantId: this.plantId,
             title: "humidity",
-            status: "pending"
+            status: "pending",
+            message: "Please humidify your plant!"
         });
         }
 
@@ -77,7 +83,8 @@ export class PlantData {
             id: `${this.plantId}-light`,
             plantId: this.plantId,
             title: "light",
-            status: "pending"
+            status: "pending",
+            message: "Please light up your plant's world!"
         });
         }
 
