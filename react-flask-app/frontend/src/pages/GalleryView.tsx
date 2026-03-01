@@ -1,18 +1,70 @@
 import shelf from "../assets/shelf.svg";
+import arrow from "../assets/nocircle_arrow.svg";
+import plant from "../assets/plant_placeholder.png";
 
 function GalleryView() {
     return (
      
     <div className="blue_background">
-        <nav className="nav"><a href="DashboardView.tsx">Dashboard</a></nav>
+        <div className="nav">
+            <img src={arrow} style={{transform: 'rotate(180deg)' }}/>
+            <a className="nav_text" href="DashboardView.tsx">Dashboard</a>
+        </div>
+        
         <div className="tan-card">
-            <div>
+            <div className="header">
                 <h1 className="gallery-title">My Garden</h1>
-                <button>+ Add Plant</button>
+                <button className="add_plant"><a href="AddPlant.tsx">+ Add Plant</a></button>
             </div>
-            <div className="parent-shelf">
-                <img src={shelf} style={{ width: '90%', height: 'auto' }}/>
+            
+            <div className="plant_scroll">
+                <div className="plant-section">
+                    <div className="plants-row">
+                        <div>
+                            <p className="plant_text">plant name</p>
+                            <img src={plant} alt="plant" />
+                        </div>
+                        <div>
+                            <p className="plant_text">plant name</p>
+                            <img src={plant} alt="plant" />
+                        </div>
+                    </div>
+
+                    <img src={shelf} alt="shelf"className="shelf-img"/>
+                </div>
+
+                <div className="plant-section">
+                    <div className="plants-row">
+                        <div>
+                            <p className="plant_text">plant name</p>
+                            <img src={plant} alt="plant" />
+                        </div>
+                        <div>
+                            <p className="plant_text">plant name</p>
+                            <img src={plant} alt="plant" />
+                        </div>
+                    </div>
+
+                    <img src={shelf} alt="shelf"className="shelf-img"/>
+                </div>
+
+                <div className="plant-section">
+                    <div className="plants-row">
+                        <div>
+                            <p className="plant_text">plant name</p>
+                            <img src={plant} alt="plant" />
+                        </div>
+                        <div>
+                            <p className="plant_text">plant name</p>
+                            <img src={plant} alt="plant" />
+                        </div>
+                    </div>
+
+                    <img src={shelf} alt="shelf"className="shelf-img"/>
+                </div>
+                
             </div>
+            
         </div>
     </div>
     
